@@ -55,5 +55,5 @@ VIEW adxl_rms (
 This RMS view can be exported into various formats for further analysis. See the [DuckDB Documentation](https://duckdb.org/docs/2.0/sql/statements/export) for more details.
 
 ```duckdb
-COPY (SELECT * FROM adxl_rms) TO "rms.csv" (FORMAT csv);
+COPY (SELECT * FROM adxl_rms) TO "rms.csv" WITH (FORMAT csv);
 ```
